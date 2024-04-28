@@ -12,17 +12,6 @@
     html, body, h1, h2, h3, h4, h5, h6 {
         font-family: "Roboto", sans-serif;
     }
-
-    .responsive-name h2 {
-      color: white;
-      font-size: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .responsive-name h2 {
-        font-size: 1.5rem;
-      }
-    }
   </style>
 </head>
 
@@ -40,17 +29,29 @@
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
             <img src="./saeednpilot.JPEG" style="width:100%" alt="Avatar">
-            <div class="w3-display-bottomleft w3-container responsive-name">
+            <div class="w3-display-bottomleft w3-container w3-text-white">
               <h2>Saeed Mohammadzadeh</h2>
             </div>
           </div>
           <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computational Biomechanics and Applied ML Researcher, Systems Engineering Ph.D. candidate at Boston university</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Boston, MA</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>saeedmhz@bu.edu</p>
             <hr>
 
+            <!-- Social Media Links -->
+            <p><b><i class="fa fa-share-alt fa-fw w3-margin-right w3-large w3-text-teal"></i>Social Media</b></p>
+            <p>
+              <a href="https://www.linkedin.com/in/saeedmhz" target="_blank">
+                  <i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>LinkedIn
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/saeedmhz" target="_blank">
+                  <i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>GitHub
+              </a>
+            </p>
+            <!-- 
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
             <p>Adobe Photoshop</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -85,63 +86,152 @@
             <p>German</p>
             <div class="w3-light-grey w3-round-xlarge">
               <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-            </div>
-            <br>
+            </div> -->
           </div>
         </div><br>
 
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>News</h2>
+         
+          <div class="w3-container">
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> March  2023 </h6>
+            <p> Thrilled to ...  </p>
+            <hr>
+          </div>
+        </div>
         <!-- End Left Column -->
       </div>
 
+      
       <!-- Right Column -->
       <div class="w3-twothird">
 
+        <!-- Research Projects -->
         <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Projects
+          </h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
-                class="w3-tag w3-teal w3-round">Current</span></h6>
-            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <h4 class="w3-opacity"><b>Generative AI for Training Dataset Augmentation</b></h4>
+            <figure style="float:left; margin-right:20px; max-width:250px; margin-left: 5px;">
+              <img src="stylegan-project.png" alt="Generative AI Project" style="width:100%;">
+            </figure>
+            <p>This project explored a data augmentation pipeline using StyleGAN to generate synthetic Cahn-Hilliard patterns. This approach circumvented the need for extensive Finite Element simulations, which are typically time-consuming. With only 1000 real samples, the StyleGAN produced additional data, enabling the training of a robust deep learning model for precise strain energy prediction in materials. This hybrid training strategy significantly improved the model's accuracy, demonstrating the value of synthetic data in limited-sample scenarios.</p>
+            <div style="clear:both;"></div>
             <hr>
           </div>
+        
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit
-              sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <h4 class="w3-opacity"><b>CNNs for Material Mechanical Behavior Prediction</b></h4>
+            <figure style="float:left; margin-right:20px; max-width:250px; margin-left: 5px;">
+              <img src="multires-wnet.png" alt="Generative AI Project" style="width:100%;">
+            </figure>
+            <p>In this work, we delved into <b>CNN architectures</b> to directly predict full-field mechanical quantities across heterogeneous materials. Our exploration encompassed several <b>U-Net variations</b>, and through <b>empirical analysis</b> of multiple <b>mechanical datasets</b>, we introduced <b>Multires-WNet</b>. This <b>U-Net</b> adaptation has shown promising results in case studies predicting strain fields, stress fields, damage fields, and crack path trajectories.</p>
+            <div style="clear:both;"></div>
             <hr>
           </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-          </div>
-        </div>
 
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-            <p>Web Development! All I need to know in one place</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>London Business School</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-            <p>Master Degree</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>School of Coding</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-            <p>Bachelor Degree</p><br>
+            <h4 class="w3-opacity"><b>SarcGraph: A Python Package for Cardiomyocyte Analysis</b></h4>
+            <figure style="float:left; margin-right:20px; max-width:200px; margin-left: 5px;">
+              <img src="sarcgraph.png" alt="Generative AI Project" style="width:100%;">
+            </figure>
+            <p style="margin-bottom: 25px">We developed <b>SarcGraph</b>, a <b>Python package</b> specifically designed for the <b>detection and tracking</b> of Z-discs and sarcomeres in images and videos of beating stem-cell-derived cardiomyocytes. Our approach features a new <b>graph-based algorithm</b> for faster and more accurate sarcomere detection, coupled with a tracking system enhanced by <b>DBSCAN</b> clustering. Crafted to be modular and user-friendly, the package accommodates researchers of varying coding expertise. Users can readily adapt and extend the code, or directly apply it to their datasets.</p>
+            <div style="clear:both;"></div>
           </div>
         </div>
+        <!-- End Research Projects -->
+
+        <!-- Internships -->
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-gears fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Internships
+          </h2>
+
+          <div class="w3-container">
+            <h4 class="w3-opacity"><strong>Data Science and Machine Learning Intern, Wayfair Inc.</strong></h4>
+            <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2023</p>
+            <ul>
+              <li>Analyzed and assessed the performance of in-house object detection models, identifying key areas for improvement.</li>
+              <li>Explored enhancements for object detectors by comparing two-stage and one-stage models, detailing their advantages and limitations.</li>
+            </ul>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h4 class="w3-opacity"><strong>Data Science and Machine Learning Intern, Wayfair Inc.</strong></h4>
+            <p class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2022</p>
+            <ul>
+              <li>Contributed to the development of an MLP-based model to optimize product sorting.</li>
+              <li>Performed hyperparameter tuning and streamlined data processing with <span class="w3-tag w3-light-grey w3-round">PyTorch</span> and <span class="w3-tag w3-light-grey w3-round">SQL</span>.</li>
+              <li style="margin-bottom: 25px">Supported the team in preparing and deploying the model for A/B testing, enhancing model reliability and performance.</li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- End Internships -->
+
+        <!-- Publications -->
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications
+          </h2>
+          
+          <p> 
+            <a href="https://doi.org/10.1016/j.eml.2021.101566" target="_blank" style="text-decoration: none;"> 
+              <h5><b>Predicting Mechanically Driven Full-field Quantities of Interest with Deep Learning-based Metamodels</b></h5>
+            </a>
+            <u>S Mohammadzadeh</u>, E Lejeune. Extreme Mechanics Letters 50 (2022): 101566. 
+          </p>
+          <hr>
+          
+          <p> 
+            <a href="https://doi.org/10.1115/1.4054898" target="_blank" style="text-decoration: none;"> 
+              <h5><b>Enhancing Mechanical Metamodels with a Generative Model-based Augmented Training Dataset</b></h5>
+            </a>
+            H Kobeissi, <u>S Mohammadzadeh</u>, and E Lejeune. Journal of Biomechanical Engineering 144.12 (2022): 121002.
+          </p>
+          <hr>
+
+          <p> 
+            <a href="https://doi.org/10.21105/joss.05322" target="_blank" style="text-decoration: none;"> 
+              <h5><b>SarcGraph: A Python Package for Analyzing the Contractile Behavior of Pluripotent Stem Cell-derived Cardiomyocytes</b></h5>
+            </a>
+            <u>S Mohammadzadeh</u>, and E Lejeune. Journal of Open Source Software 8.85 (2023): 5322.
+          </p>
+          <hr>
+          
+          <p> 
+            <a href="https://doi.org/10.21105/joss.05727" target="_blank" style="text-decoration: none;"> 
+              <h5><b>A Numerical Continuation Package in FEniCS for Nonlinear Problems in Solid Mechanics</b></h5>
+            </a>
+            P Prachaseree, <u>S Mohammadzadeh</u>, and E Lejeune. Journal of Open Source Software 9.94 (2024): 5727.
+          </p>
+          <hr>
+
+          <div style="margin-bottom: 25px;"> 
+            <a href="https://doi.org/10.1016/j.mechmat.2023.104749" target="_blank" style="text-decoration: none;"> 
+              <h5 style="margin: 0;"><b>Investigating Deep Learning Model Calibration for Classification Problems in Mechanics</b></h5>
+            </a>
+            <p>
+              <u>S Mohammadzadeh</u>, P Prachaseree, and E Lejeune. Mechanics of Materials 184 (2023): 104749.
+            </p>
+          </div>
+          
+        </div>
+        <!-- End Publications -->
+
+        <!-- Skills -->
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills</h2>
+          <div class="w3-container">
+            <h3><b>Programming</b></h3>
+            <h5>Python, MATLAB, SQL, TeX</h5><hr>
+            <h3><b>Tools</b></h3>
+            <h5 style="margin-bottom: 25px">PyTorch, TensorFlow, Git</h5>
+          </div>
+        </div>
+        <!-- End Skills -->
 
         <!-- End Right Column -->
       </div>
@@ -153,13 +243,7 @@
   </div>
 
   <footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <!--<i class="fa fa-instagram w3-hover-opacity"></i> -->
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
 

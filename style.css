@@ -1,0 +1,16 @@
+.responsive-name {
+    color: white;
+    font-size: 4vw;
+}
+
+@media (max-width: 600px) { /* Adjust the breakpoint as needed */
+    .responsive-name {
+        font-size: 5vw; /* Larger size for smaller screens */
+    }
+}
+
+@media (min-width: 1200px) { /* Adjust the breakpoint as needed */
+    .responsive-name {
+        font-size: 3vw; /* Smaller size for larger screens */
+    }
+}
